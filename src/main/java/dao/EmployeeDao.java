@@ -4,14 +4,11 @@ import Model.Employee;
 import java.util.*;
 import java.sql.*;
 public class EmployeeDao {
-
-    // Here geeksforgeeks is the name of the database
-//    private static String jdbcURL = "jdbc:mysql://localhost:3306/test";
-    private static String jdbcURL = "jdbc:postgresql://localhost:5432/test  db";
-    private static String jdbcUsername = "postgres";
+    private static String jdbcURL = "jdbc:mysql://localhost:3306/employees";
+    private static String jdbcUsername = "root";
 
     // provide your appropriate password  here
-    private static String jdbcPassword = "admin";
+    private static String jdbcPassword = "";
 
     public static Connection getConnection(){
         Connection con=null;
