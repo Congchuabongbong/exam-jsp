@@ -61,7 +61,7 @@ public class EmployeeDao {
         try {
             Connection con = EmployeeDao.getConnection();
             PreparedStatement ps = con.prepareStatement(
-                    "select * from geekusers");
+                    "select * from employees");
             ResultSet rs = ps.executeQuery();
             while (rs.next()) {
                 Employee e = new Employee();
