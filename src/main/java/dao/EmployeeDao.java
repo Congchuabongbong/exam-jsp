@@ -5,7 +5,7 @@ import java.util.*;
 import java.sql.*;
 public class EmployeeDao {
     private static String jdbcURL = "jdbc:mysql://localhost:3306/employees";
-    private static String jdbcUsername = "root";
+    private static String jdbcUsername = "";
 
     // provide your appropriate password  here
     private static String jdbcPassword = "";

@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="ISO-8859-1">
-  <title>Addition of GeekUsers</title>
+  <title>Addition of Employee</title>
 
   <!-- Section used as css styling for table -->
   <style>
@@ -44,18 +44,19 @@
 </head>
 <body>
 
-<h1>Add New GeekUser</h1>
+<h1>Add New Employee</h1>
 
 <!-- SaveServlet is the servlet name that is looked up
      and POST is the method that got called -->
 <form action="SaveServlet" method="post">
   <table class="css-styled-table">
     <tr><td>Full Name:</td><td><input type="text" name="name"/></td></tr>
-    <tr><td>BirthDay:</td><td><input type="date" name="birthDay"/></td></tr>
+    <tr><td>BirthDay:</td><td><input type="text" name="birthDay"/></td></tr>
     <tr><td>Address:</td><td><input type="text" name="address"/></td></tr>
     <tr><td>Position:</td><td><input type="text" name="position"/></td></tr>
     <tr><td>Department:</td><td><input type="text" name="department"/></td></tr>
     <tr><td colspan="2"><input type="submit" value="Save"/></td></tr>
+    <tr><td colspan="2"><input type="reset" value="Reset"/></td></tr>
   </table>
 </form>
 
